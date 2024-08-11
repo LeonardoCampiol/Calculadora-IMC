@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -24,19 +25,32 @@ class Resultado : AppCompatActivity() {
 
         tvresultadocalculo.text = resultado.toString()
 
-        val classificacao: String
+        val (classificacao: String , cor: Int) = when {
+            resultado < 18.5f -> {
+                "MAGREZA" to R.color.Magreza
+            }
 
-        classificacao = if (resultado < 18.5f) {
-            "MAGREZA"
-        } else if (resultado >= 18.5f && resultado <= 24.9f) {
-            "NORMAL"
-        } else if (resultado >= 25f && resultado <= 29.9f) {
-            "SOBREPESO"
-        } else if (resultado >= 30f && resultado <= 39.9f) {
-            "OBESIDADE"
-        } else {
-            "OBESIDADE GRAVE"
+            resultado >= 18.5f && resultado <= 24.9f -> {
+                "NORMAL" to R.color.Normal
+            }
+
+
+            resultado >= 25f && resultado <= 29.9f -> {
+            "SOBREPESO" to R.color.Sobrepeso
         }
+
+
+            resultado >= 30f && resultado <= 39.9f -> {
+                "OBESIDADE" to R.color.Obesidade
+            }
+
+            else -> {
+                "OBESIDADE GRAVE" to R.color.Obesidade_grave
+            }
+        }
+
+        tvclassificacao.setTextColor(ContextCompat.getColor(this, cor))
+
         tvclassificacao.text = classificacao
-    }
-}
+            }
+        }

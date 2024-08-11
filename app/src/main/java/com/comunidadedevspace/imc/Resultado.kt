@@ -25,7 +25,7 @@ class Resultado : AppCompatActivity() {
 
         tvresultadocalculo.text = resultado.toString()
 
-        val (classificacao: String , cor: Int) = when {
+        val (classificacao: String, cor: Int) = when {
             resultado < 18.5f -> {
                 "MAGREZA" to R.color.Magreza
             }
@@ -34,11 +34,9 @@ class Resultado : AppCompatActivity() {
                 "NORMAL" to R.color.Normal
             }
 
-
             resultado >= 25f && resultado <= 29.9f -> {
-            "SOBREPESO" to R.color.Sobrepeso
-        }
-
+                "SOBREPESO" to R.color.Sobrepeso
+            }
 
             resultado >= 30f && resultado <= 39.9f -> {
                 "OBESIDADE" to R.color.Obesidade
@@ -52,5 +50,5 @@ class Resultado : AppCompatActivity() {
         tvclassificacao.setTextColor(ContextCompat.getColor(this, cor))
 
         tvclassificacao.text = classificacao
-            }
-        }
+    }
+}

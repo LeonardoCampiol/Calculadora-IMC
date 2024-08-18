@@ -69,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_bg"
-            android:drawableEnd="@drawable/ic_height"
+            android:drawableEnd="@drawable/ic_weight"
             android:hint="Digite seu peso! Ex: 70.200"
             android:inputType="numberDecimal"
             android:maxLength="6" />
@@ -90,7 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_bg"
-            android:drawableEnd="@drawable/ic_weight"
+            android:drawableEnd="@drawable/ic_height"
             android:hint="Digite sua altura! Ex: 1.70"
             android:inputType="numberDecimal"
             android:maxLength="4" />

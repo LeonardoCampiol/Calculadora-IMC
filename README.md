@@ -3,12 +3,11 @@ Esse projeto é um aplicativo Android desenvolvido na linguagem Kotlin, projetad
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-Screenshots
 
-<img src="https://github.com/user-attachments/assets/1f147329-fdad-4229-a97a-8b8c2f29b2a8" width = 260 />
-<img src="https://github.com/user-attachments/assets/45db5c62-5b3e-4dc7-a040-ea5af971b3b4" width = 260 />
-<img src="https://github.com/user-attachments/assets/842a98f9-5966-482b-9437-537fd58e94ca" width = 260 />
-<img src="https://github.com/user-attachments/assets/ff30eaee-a406-431f-b6b8-262cdab1ce1d" width = 260 />
+<img src="https://github.com/user-attachments/assets/df3d4942-3d3f-47f8-9c9b-1f63ddce1d6e" width = 260 />
+<img src="https://github.com/user-attachments/assets/55c96d30-1807-495e-855b-6a7b9b546857" width = 260 />
+<img src="https://github.com/user-attachments/assets/39fce3c9-f75c-4154-86e7-55989ade8ab1" width = 260 />
+<img src="https://github.com/user-attachments/assets/dac2f01d-16e4-4fe2-b3bd-dc707356fe53" width = 260 />
 
 ## Tecnologias
 - Intent
